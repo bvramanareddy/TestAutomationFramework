@@ -2,10 +2,12 @@ package com.ui.tests;
 
 import com.utility.LoggerUtility;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
+@Listeners(com.ui.listners.TestListerner.class)
 public class LoginTest extends TestBase{
 
     Logger logger = LoggerUtility.getLogger(this.getClass());
