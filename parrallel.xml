@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boda's Suite" parallel="tests" thread-count="2">
+    <test  name="Login tests by Single User" >
+        <classes>
+            <class name="com.ui.tests.LoginTest"/>
+         </classes>
+     </test>
+
+    <test  name="Login tests by Multiple Users" >
+        <classes>
+            <class name="com.ui.tests.LoginTestUsingCSVData"/>
+            <class name="com.ui.tests.LoginTestUsingMultiple"/>
+            <class name="com.ui.tests.LoginTestUsingExcelData"/>
+        </classes>
+    </test>
+ </suite>

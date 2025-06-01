@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boda Suite" parallel="classes" thread-count="2">
+    <test  name="All Tests are executed by Ramana">
+        <parameter name="browser" value="${browser}"></parameter>
+        <parameter name="isLamdaTest" value="${isLamdaTest}"></parameter>
+        <parameter name="isHeadless" value="${isHeadless}"></parameter>
+
+        <classes>
+            <class name="com.ui.tests.LoginTest"/>
+
+         <!--   <class name="com.ui.tests.LoginTestUsingCSVData"/>
+            <class name="com.ui.tests.LoginTestUsingExcelData"/>
+            <class name="com.ui.tests.LoginTestUsingExcelDataUsingRetryAnalyzer"/>
+            <class name="com.ui.tests.LoginTestUsingMultiple"/> -->
+        </classes>
+    </test>
+</suite>
