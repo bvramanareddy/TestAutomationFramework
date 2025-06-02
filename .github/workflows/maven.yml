@@ -56,10 +56,10 @@ jobs:
     - name: Copy Reports to gh-pages Folder
       if: always()
 
-      run: 
+      run: |
         mkdir -p public/Extent-Reports
         cp -R ExtentReports/myAutomationReport.html public/Extent-Reports
-        cp -R Screenshots/ public/Extent-Reports/screenshots
+        cp -R Screenshots/* public/Extent-Reports/screenshots
         ls -l
 
     - name: Deploy

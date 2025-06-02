@@ -1,13 +1,9 @@
 package com.ui.tests;
 
-import com.ui.pages.HomePage;
 import com.ui.pojos.User;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static com.constants.Browser.CHROME;
 import static org.testng.Assert.assertEquals;
 
 @Listeners(com.ui.listners.TestListerner.class)
