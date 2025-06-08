@@ -8,11 +8,9 @@
 
         <classes>
             <class name="com.ui.tests.LoginTest"/>
-
-            <class name="com.ui.tests.LoginTestUsingCSVData"/>
-            <!--   <class name="com.ui.tests.LoginTestUsingExcelData"/>
-               <class name="com.ui.tests.LoginTestUsingExcelDataUsingRetryAnalyzer"/>
-               <class name="com.ui.tests.LoginTestUsingMultiple"/> -->
+            <class name="com.ui.tests.InvalidCredsLoginTest"/>
+            <class name="com.ui.tests.ProductCheckoutTest"/>
+            <class name="com.ui.tests.SearchProductTest"/>
         </classes>
     </test>
 </suite>
