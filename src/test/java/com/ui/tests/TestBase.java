@@ -37,7 +37,7 @@ public class TestBase {
         }
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void tearDown() {
 
         if (isLamdaTest) {
