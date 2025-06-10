@@ -59,7 +59,11 @@ jobs:
       run: |
         mkdir -p public/Extent-Reports/screenshots
         cp -R ExtentReports/myAutomationReport.html public/Extent-Reports
-        cp -R Screenshots/* public/Extent-Reports/screenshots
+        if [ -d "Screenshots" ]; then
+          cp -R Screenshots/* public/Extent-Reports/screenshots
+        else
+          echo "No Screenshots directory found. Skipping copy."
+        fi
         ls -l
 
     - name: Deploy
